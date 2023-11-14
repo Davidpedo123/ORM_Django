@@ -1,0 +1,11 @@
+--Create
+ djangoUser.objets.create(name='luisiya')
+--Update
+ ea = djangoUser.objects.get(id=1002)
+ ea.name = 'luisiyaVirgulini'
+  ea.save()
+ In [2]: djangoUser.objects.all().update(email='')
+In [3]: djangoUser.objects.all().update(name='')
+
+--DELETE
+djangoUser.objects.get(id=1002).delete()
